@@ -27,6 +27,12 @@
 // Lets you roll mod-tap keys
 #define IGNORE_MOD_TAP_INTERRUPT
 
+//The “permissive hold” mode, in addition to the default behavior, immediately selects the hold action when another key is tapped
+//(pressed and then released) while the dual-role key is held down, even if this happens earlier than the tapping term. 
+//If another key is just pressed, but then the dual-role key is released before that other key (and earlier than the tapping term),
+//this mode will still select the tap action.
+#define PERMISSIVE_HOLD
+
 // If you are using an Elite C rev3 on the slave side, uncomment the lines below:
 // #define SPLIT_USB_DETECT
 // #define NO_USB_STARTUP_CHECK
